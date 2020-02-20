@@ -198,6 +198,17 @@
             <groupId>com.fasterxml.jackson.module</groupId>
             <artifactId>jackson-module-jaxb-annotations</artifactId>
         </dependency>
+        <!-- CVE ID 2019-17531 -->
+        <!-- need activation-api and bind-api since 2.10 version of fasterxml.jackson -->
+        <dependency>
+            <groupId>jakarta.activation</groupId>
+            <artifactId>jakarta.activation-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.xml.bind</groupId>
+            <artifactId>jakarta.xml.bind-api</artifactId>
+        </dependency>
+        <!-- end CVE ID 2019-17531-->
 
         <dependency>
             <groupId>com.fasterxml.jackson.datatype</groupId>

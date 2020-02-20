@@ -207,7 +207,11 @@
          -->
         <version.antlr>2.7.7</version.antlr>
         <version.com.fasterxml.classmate>1.3.4</version.com.fasterxml.classmate>
-        <version.com.fasterxml.jackson>2.9.5</version.com.fasterxml.jackson>
+        <!-- CVE ID 2019-17531 -->
+        <version.com.fasterxml.jackson>2.10.2</version.com.fasterxml.jackson>
+        <version.com.jakarta.activation-api>1.2.1</version.com.jakarta.activation-api>
+        <version.com.jakarta.xml.bind-api>2.3.2</version.com.jakarta.xml.bind-api>
+        <!-- end CVE ID 2019-17531 -->
         <version.com.github.ben-manes.caffeine>2.6.2</version.com.github.ben-manes.caffeine>
         <version.com.github.fge.jackson-coreutils>1.0</version.com.github.fge.jackson-coreutils>
         <version.com.github.fge.json-patch>1.3</version.com.github.fge.json-patch>
@@ -1141,6 +1145,19 @@
                 <artifactId>jackson-module-jaxb-annotations</artifactId>
                 <version>${version.com.fasterxml.jackson}</version>
             </dependency>
+            <!-- CVE ID 2019-17531 -->
+            <!-- need activation-api and bind-api since 2.10 version of fasterxml.jackson -->
+            <dependency>
+                <groupId>jakarta.activation</groupId>
+                <artifactId>jakarta.activation-api</artifactId>
+                <version>${version.com.jakarta.activation-api}</version>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.xml.bind</groupId>
+                <artifactId>jakarta.xml.bind-api</artifactId>
+                <version>${version.com.jakarta.xml.bind-api}</version>
+            </dependency>
+            <!-- end CVE ID 2019-17531-->
 
             <dependency>
                 <groupId>com.github.ben-manes.caffeine</groupId>
