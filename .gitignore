@@ -24,6 +24,8 @@ target
 nbactions.xml
 nb-configuration.xml
 catalog.xml
+# ignore VSCode files
+.vscode
 #
 maven-ant-tasks.jar
 test-output
