@@ -23,6 +23,7 @@
 package org.jboss.as.clustering.infinispan.subsystem.remote;
 
 import java.security.AccessController;
+
 import java.security.PrivilegedAction;
 import java.util.Properties;
 import java.util.concurrent.ExecutorService;
@@ -48,16 +49,16 @@ import org.wildfly.clustering.service.concurrent.ClassLoaderThreadFactory;
  * @author Radoslav Husar
  */
 public class ClientThreadPoolServiceConfigurator extends ComponentServiceConfigurator<ExecutorFactoryConfiguration> implements ThreadFactory {
-
+ 
     private final ThreadPoolDefinition definition;
 
     private volatile ExecutorFactory factory;
-
+ 
     public ClientThreadPoolServiceConfigurator(ThreadPoolDefinition definition, PathAddress address) {
         super(definition, address);
         this.definition = definition;
     }
-
+ 
     @Override
     public ServiceConfigurator configure(OperationContext context, ModelNode model) throws OperationFailedException {
         int maxThreads = this.definition.getMaxThreads().resolveModelAttribute(context, model).asInt();
@@ -81,12 +82,12 @@ public class ClientThreadPoolServiceConfigurator extends ComponentServiceConfigu
     public ExecutorFactoryConfiguration get() {
         return new ConfigurationBuilder().asyncExecutorFactory().factory(this.factory).create();
     }
-
+    
     @Override
     public Thread newThread(Runnable task) {
         Thread thread = new Thread(task, DefaultAsyncExecutorFactory.THREAD_NAME + "-" + DefaultAsyncExecutorFactory.counter.getAndIncrement());
-        thread.setDaemon(true);
-        return thread;
+            thread.setDaemon(true);
+            return thread;
     }
-}
 
+}
