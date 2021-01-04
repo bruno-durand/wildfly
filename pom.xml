@@ -35,7 +35,7 @@
         Maintain separation between the artifact id and the version to help prevent
         merge conflicts between commits changing the GA and those changing the V.
     -->
-    <version>20.0.2.Final-SNAPSHOT</version>
+    <version>20.0.1.Final-bdf001</version>
 
     <packaging>pom</packaging>
 
@@ -292,7 +292,7 @@
         <version.io.netty>4.1.48.Final</version.io.netty>
         <version.io.opentracing>0.31.0</version.io.opentracing>
         <version.io.opentracing.concurrent>0.2.1</version.io.opentracing.concurrent>
-        <version.io.opentracing.interceptors>0.0.4</version.io.opentracing.interceptors>
+        <version.io.opentracing.interceptors>0.1.0</version.io.opentracing.interceptors>
         <version.io.opentracing.jaxrs2>0.4.1</version.io.opentracing.jaxrs2>
         <version.io.opentracing.tracerresolver>0.1.5</version.io.opentracing.tracerresolver>
         <version.io.opentracing.servlet>0.2.3</version.io.opentracing.servlet>
