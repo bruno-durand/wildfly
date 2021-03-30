@@ -28,7 +28,7 @@
     <parent>
         <groupId>org.wildfly</groupId>
         <artifactId>wildfly-ts-integ</artifactId>
-        <version>14.0.1.Final-bdf021</version>
+        <version>14.0.1.Final-bdf022</version>
     </parent>
 
     <artifactId>wildfly-ts-integ-mp</artifactId>
