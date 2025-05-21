@@ -20,7 +20,7 @@
         Maintain separation between the artifact id and the version to help prevent
         merge conflicts between commits changing the GA and those changing the V.
     -->
-    <version>31.0.1.Final-bdf010</version>
+    <version>31.0.1.Final-bdf011</version>
 
     <packaging>pom</packaging>
 
@@ -397,7 +397,7 @@
         <version.io.agroal>2.0</version.io.agroal>
         <version.io.grpc>1.58.0</version.io.grpc>
         <version.io.micrometer>1.12.0</version.io.micrometer>
-        <version.io.netty>4.1.118.Final</version.io.netty>
+        <version.io.netty>4.1.121.Final</version.io.netty>
         <version.io.opentelemetry.opentelemetry>1.29.0</version.io.opentelemetry.opentelemetry>
         <version.io.opentelemetry.proto>0.20.0-alpha</version.io.opentelemetry.proto>
         <version.io.opentelemetry.opentelemetry-semconv>1.21.0-alpha</version.io.opentelemetry.opentelemetry-semconv>

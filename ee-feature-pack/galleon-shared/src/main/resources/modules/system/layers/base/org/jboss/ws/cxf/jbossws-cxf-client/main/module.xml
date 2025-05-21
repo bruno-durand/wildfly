@@ -30,5 +30,6 @@
         <module name="org.eclipse.angus.activation" export="true" services="export"/>
         <!-- Tools support on JDK 9 and later -->
         <module name="org.jboss.modules"/>
+        <module name="java.net.http"/>
     </dependencies>
 </module>
