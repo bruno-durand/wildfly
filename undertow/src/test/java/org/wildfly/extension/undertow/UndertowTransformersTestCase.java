@@ -103,14 +103,14 @@ public class UndertowTransformersTestCase extends AbstractSubsystemTest {
                 .addFailedAttribute(hostAddress, new FailedOperationTransformationConfig.NewAttributesConfig(HostDefinition.QUEUE_REQUESTS_ON_START))
                 .addFailedAttribute(httpAddress,
                         new FailedOperationTransformationConfig.NewAttributesConfig(
-                                HttpListenerResourceDefinition.REQUIRE_HOST_HTTP11,
+                                //HttpListenerResourceDefinition.REQUIRE_HOST_HTTP11,
                                 HttpListenerResourceDefinition.PROXY_PROTOCOL,
                                 HttpListenerResourceDefinition.ALLOW_UNESCAPED_CHARACTERS_IN_URL,
                                 HttpListenerResourceDefinition.RFC6265_COOKIE_VALIDATION
                         )
                 ).addFailedAttribute(httpsAddress,
                         new FailedOperationTransformationConfig.NewAttributesConfig(
-                                HttpListenerResourceDefinition.REQUIRE_HOST_HTTP11,
+                                //HttpListenerResourceDefinition.REQUIRE_HOST_HTTP11,
                                 HttpListenerResourceDefinition.PROXY_ADDRESS_FORWARDING,
                                 HttpListenerResourceDefinition.CERTIFICATE_FORWARDING,
                                 HttpsListenerResourceDefinition.SSL_CONTEXT,

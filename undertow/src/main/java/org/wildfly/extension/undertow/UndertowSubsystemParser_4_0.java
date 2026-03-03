@@ -86,8 +86,7 @@ public class UndertowSubsystemParser_4_0 extends PersistentResourceXMLParser {
                                                         HttpListenerResourceDefinition.HTTP2_INITIAL_WINDOW_SIZE,
                                                         HttpListenerResourceDefinition.HTTP2_MAX_CONCURRENT_STREAMS,
                                                         HttpListenerResourceDefinition.HTTP2_MAX_FRAME_SIZE,
-                                                        HttpListenerResourceDefinition.HTTP2_MAX_HEADER_LIST_SIZE,
-                                                        HttpListenerResourceDefinition.REQUIRE_HOST_HTTP11)
+                                                        HttpListenerResourceDefinition.HTTP2_MAX_HEADER_LIST_SIZE)
                                 ).addChild(
                                         listenerBuilder(HttpsListenerResourceDefinition.INSTANCE)
                                                 // xsd https-listener-type
@@ -109,8 +108,7 @@ public class UndertowSubsystemParser_4_0 extends PersistentResourceXMLParser {
                                                         HttpListenerResourceDefinition.HTTP2_INITIAL_WINDOW_SIZE,
                                                         HttpListenerResourceDefinition.HTTP2_MAX_CONCURRENT_STREAMS,
                                                         HttpListenerResourceDefinition.HTTP2_MAX_FRAME_SIZE,
-                                                        HttpListenerResourceDefinition.HTTP2_MAX_HEADER_LIST_SIZE,
-                                                        HttpListenerResourceDefinition.REQUIRE_HOST_HTTP11)
+                                                        HttpListenerResourceDefinition.HTTP2_MAX_HEADER_LIST_SIZE)
                                 ).addChild(
                                         builder(HostDefinition.INSTANCE.getPathElement())
                                                 .addAttributes(HostDefinition.ALIAS, HostDefinition.DEFAULT_WEB_MODULE, HostDefinition.DEFAULT_RESPONSE_CODE, HostDefinition.DISABLE_CONSOLE_REDIRECT)

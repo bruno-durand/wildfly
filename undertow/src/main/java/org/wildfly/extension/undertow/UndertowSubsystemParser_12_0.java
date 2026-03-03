@@ -97,7 +97,6 @@ public class UndertowSubsystemParser_12_0 extends PersistentResourceXMLParser {
                                                         HttpListenerResourceDefinition.HTTP2_MAX_CONCURRENT_STREAMS,
                                                         HttpListenerResourceDefinition.HTTP2_MAX_FRAME_SIZE,
                                                         HttpListenerResourceDefinition.HTTP2_MAX_HEADER_LIST_SIZE,
-                                                        HttpListenerResourceDefinition.REQUIRE_HOST_HTTP11,
                                                         HttpListenerResourceDefinition.PROXY_PROTOCOL)
                                 ).addChild(
                                         listenerBuilder(HttpsListenerResourceDefinition.INSTANCE)
@@ -121,7 +120,6 @@ public class UndertowSubsystemParser_12_0 extends PersistentResourceXMLParser {
                                                         HttpListenerResourceDefinition.HTTP2_MAX_CONCURRENT_STREAMS,
                                                         HttpListenerResourceDefinition.HTTP2_MAX_FRAME_SIZE,
                                                         HttpListenerResourceDefinition.HTTP2_MAX_HEADER_LIST_SIZE,
-                                                        HttpListenerResourceDefinition.REQUIRE_HOST_HTTP11,
                                                         HttpListenerResourceDefinition.PROXY_PROTOCOL)
                                 ).addChild(
                                         builder(HostDefinition.INSTANCE.getPathElement())

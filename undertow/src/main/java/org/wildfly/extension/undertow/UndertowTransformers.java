@@ -35,7 +35,6 @@ import static org.wildfly.extension.undertow.HttpListenerResourceDefinition.HTTP
 import static org.wildfly.extension.undertow.HttpListenerResourceDefinition.HTTP2_MAX_FRAME_SIZE;
 import static org.wildfly.extension.undertow.HttpListenerResourceDefinition.PROXY_ADDRESS_FORWARDING;
 import static org.wildfly.extension.undertow.HttpListenerResourceDefinition.PROXY_PROTOCOL;
-import static org.wildfly.extension.undertow.HttpListenerResourceDefinition.REQUIRE_HOST_HTTP11;
 import static org.wildfly.extension.undertow.HttpsListenerResourceDefinition.SSL_CONTEXT;
 import static org.wildfly.extension.undertow.ListenerResourceDefinition.ALLOW_UNESCAPED_CHARACTERS_IN_URL;
 import static org.wildfly.extension.undertow.ListenerResourceDefinition.RFC6265_COOKIE_VALIDATION;
@@ -276,8 +275,8 @@ public class UndertowTransformers implements ExtensionTransformerRegistration {
 
     private static AttributeTransformationDescriptionBuilder addCommonListenerRules_EAP_7_0_0(AttributeTransformationDescriptionBuilder builder) {
         return builder
-                .setDiscard(DiscardAttributeChecker.DEFAULT_VALUE, REQUIRE_HOST_HTTP11, RFC6265_COOKIE_VALIDATION)
-                .addRejectCheck(RejectAttributeChecker.DEFINED, REQUIRE_HOST_HTTP11, RFC6265_COOKIE_VALIDATION)
+                // .setDiscard(DiscardAttributeChecker.DEFAULT_VALUE, REQUIRE_HOST_HTTP11, RFC6265_COOKIE_VALIDATION)
+                // .addRejectCheck(RejectAttributeChecker.DEFINED, REQUIRE_HOST_HTTP11, RFC6265_COOKIE_VALIDATION)
                 .setValueConverter(AttributeConverter.DEFAULT_VALUE, HTTP2_HEADER_TABLE_SIZE, HTTP2_INITIAL_WINDOW_SIZE, HTTP2_MAX_FRAME_SIZE);
     }
 
