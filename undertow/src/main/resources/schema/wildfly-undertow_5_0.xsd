@@ -141,7 +141,6 @@
                 <xs:attribute name="http2-max-concurrent-streams" type="xs:int" use="optional" />
                 <xs:attribute name="http2-max-frame-size" type="xs:int" use="optional" />
                 <xs:attribute name="http2-max-header-list-size" type="xs:int" use="optional" />
-                <xs:attribute name="require-host-http11" type="xs:boolean" use="optional" default="false"/>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
@@ -202,7 +201,6 @@
                 <xs:attribute name="http2-max-concurrent-streams" type="xs:int" use="optional" />
                 <xs:attribute name="http2-max-frame-size" type="xs:int" use="optional" />
                 <xs:attribute name="http2-max-header-list-size" type="xs:int" use="optional" />
-                <xs:attribute name="require-host-http11" type="xs:boolean" use="optional" default="false"/>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>

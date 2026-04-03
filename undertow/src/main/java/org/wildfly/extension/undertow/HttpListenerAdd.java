@@ -38,8 +38,7 @@ class HttpListenerAdd extends ListenerAdd<HttpListenerService> {
         final boolean proxyAddressForwarding = AbstractHttpListenerResourceDefinition.PROXY_ADDRESS_FORWARDING.resolveModelAttribute(context, model).asBoolean();
         OptionMap.Builder listenerBuilder = OptionMap.builder().addAll(listenerOptions);
         AbstractHttpListenerResourceDefinition.ENABLE_HTTP2.resolveOption(context, model,listenerBuilder);
-        AbstractHttpListenerResourceDefinition.REQUIRE_HOST_HTTP11.resolveOption(context, model,listenerBuilder);
-
+  
         handleHttp2Options(context, model, listenerBuilder);
 
         return new HttpListenerService(serviceConsumer, context.getCurrentAddress(), serverName, listenerBuilder.getMap(), socketOptions, certificateForwarding, proxyAddressForwarding, proxyProtocol);

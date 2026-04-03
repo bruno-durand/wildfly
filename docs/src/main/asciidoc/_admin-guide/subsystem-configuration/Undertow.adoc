@@ -265,10 +265,6 @@ This has a small but measurable performance impact
 |request-parse-timeout
 |The maximum amount of time (in milliseconds) that can be spent parsing the request
 
-|require-host-http11
-|Require that all HTTP/1.1 requests have a 'Host' header, as per the RFC. IF the request does not include
-this header it will be rejected with a 403.
-
 |resolve-peer-address
 |Enables host dns lookup
 

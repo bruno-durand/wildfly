@@ -94,13 +94,6 @@ abstract class AbstractHttpListenerResourceDefinition extends ListenerResourceDe
             .setAllowExpression(true)
             .build();
 
-    static final OptionAttributeDefinition REQUIRE_HOST_HTTP11 = OptionAttributeDefinition.builder("require-host-http11", UndertowOptions.REQUIRE_HOST_HTTP11)
-            .setRequired(false)
-            .setFlags(AttributeAccess.Flag.RESTART_ALL_SERVICES)
-            .setAllowExpression(true)
-            .setDefaultValue(ModelNode.FALSE)
-            .build();
-
     static final SimpleAttributeDefinition PROXY_PROTOCOL = new SimpleAttributeDefinitionBuilder(Constants.PROXY_PROTOCOL, ModelType.BOOLEAN)
             .setDefaultValue(ModelNode.FALSE)
             .setRequired(false)
@@ -125,7 +118,6 @@ abstract class AbstractHttpListenerResourceDefinition extends ListenerResourceDe
             HTTP2_MAX_FRAME_SIZE,
             CERTIFICATE_FORWARDING,
             PROXY_ADDRESS_FORWARDING,
-            REQUIRE_HOST_HTTP11,
             PROXY_PROTOCOL);
 
     AbstractHttpListenerResourceDefinition(SimpleResourceDefinition.Parameters parameters, Function<Collection<AttributeDefinition>, AbstractAddStepHandler> addHandlerFactory) {

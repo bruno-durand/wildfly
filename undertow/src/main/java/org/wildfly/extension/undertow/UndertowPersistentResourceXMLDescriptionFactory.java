@@ -116,9 +116,6 @@ public enum UndertowPersistentResourceXMLDescriptionFactory implements Function<
 
     private static Stream<AttributeDefinition> httpListenerAttributes(UndertowSubsystemSchema schema) {
         Stream<AttributeDefinition> attributes = AbstractHttpListenerResourceDefinition.ATTRIBUTES.stream();
-        if (!schema.since(UndertowSubsystemSchema.VERSION_4_0)) {
-            attributes = attributes.filter(Predicate.isEqual(AbstractHttpListenerResourceDefinition.REQUIRE_HOST_HTTP11).negate());
-        }
         if (!schema.since(UndertowSubsystemSchema.VERSION_6_0)) {
             attributes = attributes.filter(Predicate.isEqual(AbstractHttpListenerResourceDefinition.PROXY_PROTOCOL).negate());
         }
