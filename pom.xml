@@ -20,7 +20,7 @@
         Maintain separation between the artifact id and the version to help prevent
         merge conflicts between commits changing the GA and those changing the V.
     -->
-    <version>40.0.1.Final-bdf003</version>
+    <version>40.0.1.Final-bdf004</version>
 
     <packaging>pom</packaging>
 
@@ -511,7 +511,7 @@
         <version.org.apache.santuario>3.0.6</version.org.apache.santuario>
         <version.org.apache.velocity>2.4.1</version.org.apache.velocity>
         <version.org.apache.wss4j>3.0.6</version.org.apache.wss4j>
-        <version.org.apache.ws.xmlschema>2.3.2</version.org.apache.ws.xmlschema>
+        <version.org.apache.ws.xmlschema>2.3.3</version.org.apache.ws.xmlschema>
         <version.org.bitbucket.jose4j>0.9.6</version.org.bitbucket.jose4j>
         <version.org.bytebuddy>1.18.8</version.org.bytebuddy>
         <version.org.codehaus.woodstox.stax2-api>4.2.2</version.org.codehaus.woodstox.stax2-api>
